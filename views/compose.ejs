@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Compose</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <%- include("partial/header") -%>
+
+    <h1>Home</h1>
+    <!-- here Angela used /compose instead of / -->
+    <div class="form-group">
+    <form class="" action="/compose" method="post">
+
+    <label for="">Text</label>
+    <input class="form-control" type="text" name="postTitle" value="">
+
+    <label for="">Message</label>
+    <textarea class="form-control" name="postBody" rows="8" cols="80"></textarea>
+
+    <button type="submit" class="btn btn-primary" name="button">Publish</button>
+
+    </form>
+
+    </div>
+
+    <%-include("partial/footer")-%>
+  </body>
+</html>
